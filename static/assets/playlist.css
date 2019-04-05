@@ -1,0 +1,27 @@
+
+body {
+    background-color: darkblue;
+}
+
+#main-container {
+    background-color: lightsteelblue;
+    /*text-align: center;*/
+    justify-content: center;
+    align-content: center;
+    /*display: inline-block;*/
+    padding: 2%
+}
+
+#text-div {
+    /*width: 50%;*/
+    /*display: inline;*/
+}
+
+#users {
+    /*width: 50%;*/
+    /*display: inline;*/
+}
+
+#list li:hover{
+    text-decoration: line-through;
+}

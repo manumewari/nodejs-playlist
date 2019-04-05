@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/assets/playlist.js"></script>
+        <link href="/assets/playlist.css" rel="stylesheet" type="text/css">
+        <script>
+            $( document ).ready(function() {
+                console.log( "document loaded" );
+            });
+
+            $( window ).on( "load", function() {
+                console.log( "window loaded" );
+            });
+            </script>
+    </head>
+    <body>
+
+        <div id="main-container">
+            <h1>List of people living in Dwarka</h1>
+            <div id="text-div">
+                <form>
+                    <input type="text" name="name" value="" placeholder="type your name" required>
+                    <button type="submit" >Add User</button>
+                </form>
+            </div>
+            <div id="users">
+                <ul id="list">
+                    <% for (var i=0; i<users.length; i++) {%>
+                    <li>
+                        <%=users[i].user%>
+                    </li>
+                    <%}%>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+
+</html>
